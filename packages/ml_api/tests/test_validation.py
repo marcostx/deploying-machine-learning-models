@@ -10,7 +10,7 @@ def test_prediction_endpoint_validation_200(flask_test_client):
     # This is important as it makes it harder for the test
     # data versions to get confused by not spreading it
     # across packages.
-    test_data = load_dataset(file_name=config.TESTING_DATA_FILE)
+    test_data = pd.read_csv("/home/circleci/project/packages/regression_model/regression_model/datasets/test.csv")
     post_json = test_data.to_json(orient='records')
 
     # When
