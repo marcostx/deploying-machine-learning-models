@@ -25,6 +25,8 @@ def save_pipeline(*, pipeline_to_persist) -> None:
     """
 
     # Prepare versioned save file name
+    print(config.PIPELINE_SAVE_FILE})
+    print({_version})
     save_file_name = f"{config.PIPELINE_SAVE_FILE}{_version}.pkl"
     save_path = config.TRAINED_MODEL_DIR / save_file_name
 
