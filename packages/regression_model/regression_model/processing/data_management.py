@@ -12,7 +12,7 @@ _logger = logging.getLogger(__name__)
 
 
 def load_dataset(*, file_name: str) -> pd.DataFrame:
-    _data = pd.read_csv(f"{config.DATASET_DIR}/{file_name}")
+    _data = pd.read_csv("/home/circleci/project/packages/regression_model/regression_model/datasets/test.csv")
     return _data
 
 
