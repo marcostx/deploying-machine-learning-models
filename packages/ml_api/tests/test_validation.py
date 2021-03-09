@@ -1,4 +1,5 @@
 import json
+import pandas as pd
 
 from regression_model.config import config
 from regression_model.processing.data_management import load_dataset
